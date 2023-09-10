@@ -47,11 +47,15 @@ const SocialMedia = () => {
             </p>
 
             <div id="group" className={styles.grid}>
-                <div id="box" className={styles.gridItem}></div>
                 <div id="box" className={styles.gridItem}>
-                    <Image fill src="/images/socialMedia1.png" alt="two phones" />
+                    <Image fill src="/images/socialMedia1.jpg" alt="social media image" />
                 </div>
-                <div id="box" className={styles.gridItem}></div>
+                <div id="box" className={styles.gridItem}>
+                    <Image fill src="/images/socialMedia2.jpg" alt="social media image" />
+                </div>
+                <div id="box" className={styles.gridItem}>
+                    <Image fill src="/images/socialMedia3.jpg" alt="social media image" />
+                </div>
             </div>
         </section>
     );

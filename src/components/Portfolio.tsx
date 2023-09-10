@@ -3,7 +3,7 @@ import { useState } from "react";
 import styles from "./Portfolio.module.scss";
 import Image from "next/image";
 
-export const Portfolio = () => {
+const Portfolio = () => {
     const [config, setConfig] = useState({
         currentSlide: 0,
     });
@@ -13,7 +13,7 @@ export const Portfolio = () => {
             <div>
                 <div className={styles.portfolioHead}>
                     <h2>Portfolio</h2>
-                    <a href="#">
+                    <a target="_blanc" href="https://www.behance.net/tajabarabash">
                         {iconDot}
                         mehr auf behance
                         {iconArrow}
@@ -200,3 +200,5 @@ const iconArrow = (
         />
     </svg>
 );
+
+export default Portfolio;

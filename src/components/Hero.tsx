@@ -68,7 +68,7 @@ export default function Hero() {
                     <span>antwerpes ag</span>
                     <span>Vogelsanger Straße 66</span>
                     <span>50823 Köln</span>
-                    <span>www.antwerpes.com</span>
+                    <a href="https://www.antwerpes.com/de/">www.antwerpes.com</a>
                 </div>
 
                 <svg

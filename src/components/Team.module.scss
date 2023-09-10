@@ -61,7 +61,7 @@
     }
 }
 .responsibility {
-    padding: 5rem 6rem 4rem;
+    padding: 5rem 3.5rem 5rem 6rem;
     background-color: $darkText;
     display: flex;
     gap: 2.8rem;
@@ -73,6 +73,7 @@
     }
     &Container {
         display: flex;
+        gap: 1.8rem;
         & > div p {
             @include body2;
             margin-top: 0.5rem;
@@ -82,6 +83,15 @@
             display: grid;
             // grid template columns: 1fr 1fr;
             grid-template-rows: 7rem 1fr;
+            &:nth-child(1) p {
+                width: 185px;
+            }
+            &:nth-child(1) p {
+                width: 179px;
+            }
+            &:nth-child(1) p {
+                width: 200px;
+            }
         }
     }
     p {
@@ -116,14 +126,19 @@
 }
 .dot1 {
     top: 3rem;
-    left: 80px;
+    left: 85px;
 }
 .dot2 {
     top: 26px;
     left: 36px;
 }
 .dot3 {
-    top: 50%;
-    left: 45px;
+    top: calc(50% - 0.5rem);
+    left: 50px;
     transform: translate(0, -50%);
+}
+.geometry {
+    width: 60% !important;
+    position: relative;
+    top: -0.5rem;
 }

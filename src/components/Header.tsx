@@ -15,6 +15,14 @@ export default function Header() {
             </ul>
 
             <svg
+                onClick={() => {
+                    // download file from public folder
+                    const link = document.createElement("a");
+                    link.href = "/SoSe2023_Praktikumsbericht_Taisiia_Barabash_.pdf";
+                    link.download = "Praktikumsbericht_Taisiia_Barabash.pdf";
+                    link.click();
+                    link.remove();
+                }}
                 className={styles.downloadBtn}
                 width="178"
                 height="50"

@@ -83,7 +83,12 @@ const Responsibility = () => {
                 <div className={styles.responsibilityContainer}>
                     <div>
                         <div className={styles.imageWrapper}>
-                            <img src="/images/responsibility1.png" alt="geometry" />
+                            <Image
+                                src="/images/responsibility1.png"
+                                width={60}
+                                height={62}
+                                alt="geometry"
+                            />
                             <div className={styles.dot1}>{iconDot}</div>
                         </div>
                         <p>
@@ -93,7 +98,12 @@ const Responsibility = () => {
                     </div>
                     <div>
                         <div className={styles.imageWrapper}>
-                            <img src="/images/responsibility2.png" alt="geometry" />
+                            <Image
+                                src="/images/responsibility2.png"
+                                width={72}
+                                height={72}
+                                alt="geometry"
+                            />
                             <div className={styles.dot2}>{iconDot}</div>
                         </div>
                         <p>
@@ -103,7 +113,13 @@ const Responsibility = () => {
                     </div>
                     <div>
                         <div className={styles.imageWrapper}>
-                            <img src="/images/responsibility3.png" alt="geometry" />
+                            <Image
+                                className={styles.geometry}
+                                src="/images/responsibility3.png"
+                                width={81}
+                                height={84}
+                                alt="geometry"
+                            />
                             <div className={styles.dot3}>{iconDot}</div>
                         </div>
                         <p>

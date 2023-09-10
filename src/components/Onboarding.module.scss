@@ -41,19 +41,16 @@
     display: flex;
     gap: 1.25rem;
     img {
-        object-fit: contain;
-        height: fit-content;
+        object-fit: cover;
+        height: 100%;
+        transition: 0.3s ease-in-out box-shadow;
+        &:hover {
+            box-shadow: 0px 4px 20px 0px rgba(14, 38, 76, 0.36);
+        }
     }
 }
 .image {
     width: 70%;
-    &:hover {
-        ~ .image2 {
-            svg {
-                transform: translateX(-385px);
-            }
-        }
-    }
     &2 {
         width: 35%;
         position: relative;

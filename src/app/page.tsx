@@ -2,20 +2,51 @@
 import Header from "@/components/Header";
 import styles from "./page.module.scss";
 import Hero from "@/components/Hero";
-
+import dynamic from "next/dynamic";
 import { gsap } from "gsap";
 import { ScrollSmoother } from "gsap/dist/ScrollSmoother";
 import { useEffect } from "react";
-import About from "@/components/About";
-import { Portfolio } from "@/components/Portfolio";
-import Onboarding from "@/components/Onboarding";
-import Team from "@/components/Team";
-import SocialMedia from "@/components/SocialMedia";
-import Configurator from "@/components/Configurator";
-import Presentation from "@/components/Presentation";
-import Graphic from "@/components/Graphic";
-import Conclusion from "@/components/Conclusion";
-import Footer from "@/components/Footer";
+
+const About = dynamic(() => import("@/components/About"), {
+    ssr: false,
+    loading: () => <div>Loading...</div>,
+});
+const Portfolio = dynamic(() => import("@/components/Portfolio"), {
+    ssr: false,
+    loading: () => <div>Loading...</div>,
+});
+const Onboarding = dynamic(() => import("@/components/Onboarding"), {
+    ssr: false,
+    loading: () => <div>Loading...</div>,
+});
+const Team = dynamic(() => import("@/components/Team"), {
+    ssr: false,
+    loading: () => <div>Loading...</div>,
+});
+const SocialMedia = dynamic(() => import("@/components/SocialMedia"), {
+    ssr: false,
+    loading: () => <div>Loading...</div>,
+});
+const Configurator = dynamic(() => import("@/components/Configurator"), {
+    ssr: false,
+    loading: () => <div>Loading...</div>,
+});
+const Presentation = dynamic(() => import("@/components/Presentation"), {
+    ssr: false,
+    loading: () => <div>Loading...</div>,
+});
+const Graphic = dynamic(() => import("@/components/Graphic"), {
+    ssr: false,
+    loading: () => <div>Loading...</div>,
+});
+const Conclusion = dynamic(() => import("@/components/Conclusion"), {
+    ssr: false,
+    loading: () => <div>Loading...</div>,
+});
+const Footer = dynamic(() => import("@/components/Footer"), {
+    ssr: false,
+    loading: () => <div>Loading...</div>,
+});
 
 gsap.registerPlugin(ScrollSmoother);
 

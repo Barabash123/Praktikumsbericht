@@ -21,7 +21,14 @@ const Presentation = () => {
                         alt="presentation image"
                     />
                 </div>
-                <div className={styles.gridSpace}></div>
+                <div className={styles.gridSpace}>
+                    <Image
+                        objectFit="cover"
+                        src="/images/presentation3.jpg"
+                        fill
+                        alt="presentation image"
+                    />
+                </div>
                 <div className={styles.gridBottom}>
                     <Image
                         objectFit="cover"

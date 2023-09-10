@@ -1,4 +1,4 @@
-@import "src/styles/fonts.scss";
+@import "src/styles/toolkit.scss";
 .hero {
     padding-top: 10rem;
     &Title {
@@ -40,6 +40,12 @@
 
         span:first-child {
             font-weight: 700;
+        }
+        a {
+            transition: 0.3s ease-in-out color;
+            &:hover {
+                color: $darkText;
+            }
         }
     }
     &Logo {
