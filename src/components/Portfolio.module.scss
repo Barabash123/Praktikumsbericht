@@ -1,0 +1,142 @@
+@import "src/styles/toolkit.scss";
+
+.portfolio {
+    background-color: #0d0c22;
+    height: 47.375rem;
+    padding: 4.2rem;
+    overflow: hidden;
+    & > div {
+        @include container;
+    }
+    h2 {
+        @include caption;
+        color: $lightText;
+        margin-bottom: 1.5rem;
+    }
+    a {
+        display: flex;
+        @include caption2;
+        color: $lightText;
+        font-weight: 400;
+        align-items: center;
+        gap: 0.3rem;
+        text-transform: uppercase;
+
+        &:hover {
+            svg:first-child {
+                transition: 0.3s ease-in-out transform;
+
+                transform: rotate(180deg) translate(0, 0.5rem);
+            }
+        }
+    }
+    p {
+        @include body;
+        color: $lightText;
+        font-weight: 400;
+        width: 40vw;
+    }
+    &Head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 3.5rem;
+    }
+}
+.tabs {
+    display: flex;
+    gap: 1rem;
+    margin: 2.3rem 0 2.8rem 0;
+}
+.tab {
+    display: flex;
+    width: fit-content;
+    color: $lightText;
+    position: relative;
+    padding: 0 0.625rem 0 0;
+    cursor: pointer;
+    span:first-child {
+        position: absolute;
+        transition: 0.3s ease-in-out clip-path;
+        left: 0;
+        clip-path: circle(0%);
+        z-index: 3;
+        opacity: 1;
+    }
+    span:last-child {
+        position: relative;
+        z-index: 2;
+        opacity: 0.6;
+    }
+    span {
+        white-space: nowrap;
+        @include h3;
+        color: $lightText;
+        &::after {
+            content: "/";
+            position: relative;
+            margin-left: 1.25rem;
+        }
+    }
+
+    &Active {
+        span:first-child {
+            clip-path: circle(100%);
+            opacity: 0;
+        }
+        span:last-child {
+            opacity: 1;
+        }
+    }
+}
+.slides {
+    display: flex;
+    width: 300vw;
+    height: 263px;
+}
+.slide {
+    height: 100%;
+    width: 100%;
+    display: none;
+    &Active {
+        display: flex;
+
+        & > div {
+            opacity: 0;
+            animation: slideImages 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+            overflow: hidden;
+            border-radius: 0.25rem;
+        }
+        img {
+            transition: 0.3s ease-in-out transform;
+            border-radius: 0.25rem;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+.slideContent {
+    position: relative;
+    height: 100%;
+    display: flex;
+    gap: 1.25rem;
+    div {
+        width: 377px;
+        height: 263px;
+        transition: 0.3s ease-in-out transform, 0.3s ease-in-out opacity;
+        position: relative !important;
+        overflow: hidden;
+    }
+}
+
+@keyframes slideImages {
+    0% {
+        transform: translateY(-50px) scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+}

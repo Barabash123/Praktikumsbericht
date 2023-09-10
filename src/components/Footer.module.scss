@@ -1,0 +1,26 @@
+@import "src/styles/toolkit.scss";
+
+.footer {
+    padding-top: 2.44rem;
+    padding-bottom: 2.44rem;
+    background-color: $darkText;
+    & > div {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 3.8rem;
+        @include container;
+    }
+    a {
+        @include h3;
+        color: $grayText;
+        line-height: 1.75rem;
+        &:first-child {
+            text-decoration: underline;
+        }
+        transition: 0.3s ease-in-out color;
+        &:hover {
+            color: $lightText;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+@import "src/styles/toolkit.scss";
+.presentation {
+    @include container;
+    margin-top: 5rem;
+    h2 {
+        @include h2;
+        margin-bottom: 1.9rem;
+        text-align: start;
+    }
+    p {
+        max-width: 42rem;
+        @include body;
+        color: $darkText;
+    }
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1.25rem;
+    grid-template-areas:
+        "grid-1 grid-1 grid-1 grid-1 grid-3 grid-3 grid-3"
+        "grid-2 grid-2 grid-2 grid-2 grid-2 grid-2 grid-2";
+    div {
+        position: relative;
+    }
+    img {
+        position: relative !important;
+    }
+}
+.gridImage {
+    grid-area: grid-1;
+}
+.gridSpace {
+    grid-area: grid-3;
+    background-color: $lightText;
+}
+.gridBottom {
+    grid-area: grid-2;
+}

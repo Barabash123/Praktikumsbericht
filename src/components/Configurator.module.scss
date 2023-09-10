@@ -1,0 +1,42 @@
+@import "src/styles/toolkit.scss";
+.configurator {
+    @include container;
+    margin-top: 5rem;
+    h2 {
+        @include h2;
+        text-align: start;
+        margin-bottom: 1.9rem;
+    }
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "grid-3 grid-1 grid-1"
+        "grid-2 grid-2 grid-2";
+    gap: 1.25rem;
+    div {
+        position: relative;
+    }
+    img {
+        position: relative !important;
+    }
+}
+
+.gridText {
+    grid-area: grid-3;
+    p {
+        @include body;
+        color: $darkText;
+        margin-bottom: 1.5rem;
+    }
+}
+.gridImage {
+    grid-area: grid-1;
+}
+.gridBottom {
+    grid-area: grid-2;
+    display: flex;
+    gap: 1.25rem;
+}

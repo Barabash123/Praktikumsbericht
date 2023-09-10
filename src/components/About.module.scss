@@ -1,0 +1,54 @@
+@import "src/styles/fonts.scss";
+.about {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    height: fit-content;
+    margin: 4.3rem 0 0 0;
+    gap: 7vw;
+}
+
+.grid {
+    &Right {
+        position: relative;
+        margin-top: 2.7rem;
+        &::after {
+            width: 100vw;
+            height: 45.875rem;
+            content: "";
+            position: absolute;
+            left: -3.5rem;
+            bottom: 0;
+            background-color: rgba(227, 228, 222, 0.24);
+        }
+        h2 {
+            @include caption;
+            margin-bottom: 5.4rem;
+            position: relative;
+            z-index: 1;
+        }
+        p {
+            padding-bottom: 5.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        span {
+            @include body;
+            color: #0d0c22;
+            display: block;
+        }
+    }
+    &Left {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        span {
+            @include body;
+            color: #0d0c22;
+            display: block;
+        }
+        svg {
+            margin-bottom: 0.5rem;
+        }
+    }
+}

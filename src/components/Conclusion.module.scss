@@ -1,0 +1,30 @@
+@import "src/styles/toolkit.scss";
+.conclusion {
+    @include container;
+    margin-top: 5rem;
+    h2 {
+        @include h2;
+        margin-bottom: 1.9rem;
+        text-align: start;
+    }
+    p {
+        @include body;
+        color: $darkText;
+        margin-bottom: 1.25rem;
+        line-height: 1.5rem;
+    }
+    &Content {
+        display: flex;
+        gap: 1.25rem;
+        margin-bottom: 1.45rem;
+        & > div {
+            width: 100%;
+        }
+    }
+    &Image {
+        position: relative;
+        img {
+            position: relative !important;
+        }
+    }
+}

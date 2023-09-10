@@ -1,0 +1,129 @@
+@import "src/styles/toolkit.scss";
+.team {
+    @include container;
+    margin-top: 5rem;
+    h2 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: fit-content;
+        margin: 0 auto 2.5rem auto;
+        @include h2;
+        position: relative;
+        span {
+            @include h4;
+            line-height: 150%;
+            position: relative;
+            z-index: 2;
+        }
+        svg {
+            position: absolute;
+            right: -0.15rem;
+            top: 0.25rem;
+            z-index: 1;
+        }
+    }
+}
+.teamMembers {
+    display: flex;
+    width: 100%;
+    gap: 1.25rem;
+    justify-content: center;
+}
+.teamMember {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    position: relative;
+    place-items: center;
+    margin-bottom: 4.75rem;
+    &Photo {
+        height: 13.375rem;
+        width: 11.125rem;
+        border-radius: 50%;
+        position: relative;
+    }
+    pre {
+        font-family: "Muller", sans-serif;
+        text-align: center;
+    }
+    &Name {
+        @include caption2;
+        color: $darkText;
+        margin-top: 0.69rem;
+    }
+    pre:last-child {
+        @include body;
+        color: $darkText;
+        font-weight: 300;
+        margin-top: 0.75rem;
+        line-height: 1.125rem; /* 128.571% */
+    }
+}
+.responsibility {
+    padding: 5rem 6rem 4rem;
+    background-color: $darkText;
+    display: flex;
+    gap: 2.8rem;
+    width: 100%;
+    h2 {
+        @include h2;
+        color: $lightText;
+        text-align: start;
+    }
+    &Container {
+        display: flex;
+        & > div p {
+            @include body2;
+            margin-top: 0.5rem;
+        }
+        & > div {
+            margin-top: 2.7rem;
+            display: grid;
+            // grid template columns: 1fr 1fr;
+            grid-template-rows: 7rem 1fr;
+        }
+    }
+    p {
+        @include body;
+        color: #fff;
+    }
+    img {
+        width: 50%;
+        object-fit: contain;
+    }
+    .imageWrapper {
+        position: relative;
+        &:hover {
+            .dot1 {
+                transform: translateY(20px);
+            }
+            .dot2 {
+                transform: rotate(5deg) translate(20px, 1px);
+                transform-origin: center;
+            }
+            .dot3 {
+                transform: translate(2rem, -50%);
+            }
+        }
+    }
+}
+.dot1,
+.dot2,
+.dot3 {
+    position: absolute;
+    transition: 0.3s ease-in-out transform;
+}
+.dot1 {
+    top: 3rem;
+    left: 80px;
+}
+.dot2 {
+    top: 26px;
+    left: 36px;
+}
+.dot3 {
+    top: 50%;
+    left: 45px;
+    transform: translate(0, -50%);
+}

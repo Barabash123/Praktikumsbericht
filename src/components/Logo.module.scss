@@ -1,0 +1,13 @@
+@import "src/styles/fonts.scss";
+.logo {
+    @include h1;
+    display: flex;
+    svg {
+        transition: 0.3s ease-in-out all;
+    }
+    &:hover {
+        svg {
+            transform: translateY(-0.2rem) rotate(180deg);
+        }
+    }
+}

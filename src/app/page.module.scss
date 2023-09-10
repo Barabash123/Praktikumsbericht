@@ -1,0 +1,7 @@
+@import "src/styles/fonts";
+@import "src/styles/mixins";
+
+.container {
+    @include container;
+    overflow: hidden;
+}
