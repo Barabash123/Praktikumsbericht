@@ -19,12 +19,7 @@ export default function About() {
             },
         });
 
-        tl.fromTo(
-            "#iconDot2",
-            { opacity: 0, y: -50 },
-            { opacity: 1, y: 0, stagger: 0.1, duration: 0.5 },
-            "-=0.5"
-        );
+        tl.fromTo("#iconDot2", { y: 20 }, { y: 0, stagger: 0.1, duration: 0.5 }, "-=0.5");
     }, []);
 
     return (
