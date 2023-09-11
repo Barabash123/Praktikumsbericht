@@ -70,6 +70,14 @@
         @include h2;
         color: $lightText;
         text-align: start;
+        position: relative;
+        svg {
+            position: absolute;
+            top: -4px;
+            left: -7px;
+            width: 18px;
+            height: 18px;
+        }
     }
     &Container {
         display: flex;

@@ -24,7 +24,7 @@ const teamMember = [
         src: "/images/teamMember4.jpg",
     },
     {
-        name: "Lilli Bentrup",
+        name: "Alina Sieburg",
         position: "Junior Designer",
         src: "/images/teamMember5.jpg",
     },
@@ -70,7 +70,10 @@ const TeamMember = ({ src, name, position }: { src: string; name: string; positi
 const Responsibility = () => {
     return (
         <div className={styles.responsibility}>
-            <h2>Meine Aufgabenbereiche</h2>
+            <h2>
+                Meine Aufgabenbereiche
+                {iconDot}
+            </h2>
             <div>
                 <p>
                     Meine täglichen Aufgaben bestanden im Wesentlichen darin, meine Kollegen bei

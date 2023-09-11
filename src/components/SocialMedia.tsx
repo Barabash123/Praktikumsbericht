@@ -1,41 +1,12 @@
 import styles from "./SocialMedia.module.scss";
 import { gsap } from "gsap";
-import Flip from "gsap/dist/Flip";
 import ScrollToPlugin from "gsap/dist/ScrollToPlugin";
 import Image from "next/image";
-gsap.registerPlugin(Flip, ScrollToPlugin);
+gsap.registerPlugin(ScrollToPlugin);
 
 const SocialMedia = () => {
     return (
-        <section
-            onClick={() => {
-                const group = document.querySelector("#group") as HTMLDivElement;
-
-                // Get the initial state
-                const state = Flip.getState("#group, #box");
-
-                console.log(state);
-
-                // toggle the flex direction
-                group.classList.toggle(styles.reorder);
-
-                Flip.from(state, {
-                    absolute: true, // uses position: absolute during the flip to work around flexbox challenges
-                    duration: 0.3,
-                    stagger: 0.1,
-                    ease: "power1.inOut",
-
-                    // you can use any other tweening properties here too, like onComplete, onUpdate, delay, etc.
-                });
-                gsap.to(window, {
-                    scrollTo: {
-                        y: group,
-                    },
-                    ease: "none",
-                    duration: 0,
-                });
-            }}
-            className={styles.social}>
+        <section className={styles.social}>
             <h2>Social Media</h2>
             <p>
                 Eine meiner ersten Aufgaben bestand darin, die neuen Gestaltungselemente,
