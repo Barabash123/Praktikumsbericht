@@ -35,7 +35,6 @@ const Portfolio = () => {
                             config.currentSlide === 0 ? styles.tabActive : "",
                         ].join(" ")}>
                         <span>Web Design</span>
-                        <span>Web Design</span>
                     </button>
                     <button
                         onClick={() => {
@@ -46,7 +45,6 @@ const Portfolio = () => {
                             config.currentSlide === 1 ? styles.tabActive : "",
                         ].join(" ")}>
                         <span>Mobile & Apps</span>
-                        <span>Mobile & Apps</span>
                     </button>
                     <button
                         onClick={() => {
@@ -56,7 +54,6 @@ const Portfolio = () => {
                             styles.tab,
                             config.currentSlide === 2 ? styles.tabActive : "",
                         ].join(" ")}>
-                        <span>Druck & Illustration</span>
                         <span>Druck & Illustration</span>
                     </button>
                 </div>
