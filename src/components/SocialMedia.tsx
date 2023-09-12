@@ -14,7 +14,7 @@ const SocialMedia = () => {
                 Kommunikationsabteilung von antwerpes, zu modernisieren/neu zu entwickeln. Die dabei
                 entstandenen Bilder werden vom Social Media Team genutzt und weiterentwickelt.
                 Darüber hinaus war ich an der Erstellung von Bildern für die LinkedIn-Seite
-                <b>healthy.ID</b>, Targeting-Instrument von antwerpes, beteiligt.
+                <b> healthy.ID</b>, Targeting-Instrument von antwerpes, beteiligt.
             </p>
 
             <div id="group" className={styles.grid}>

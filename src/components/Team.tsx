@@ -15,7 +15,7 @@ const teamMember = [
     },
     {
         name: "Carola \n Sandmann-Basseng",
-        position: "Junior Designer",
+        position: "Art Director UX/UI",
         src: "/images/teamMember3.jpg",
     },
     {

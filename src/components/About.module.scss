@@ -25,6 +25,12 @@
             margin-bottom: 5.4rem;
             position: relative;
             z-index: 1;
+            span {
+                position: relative;
+                font-size: inherit;
+                line-height: inherit;
+                display: inline-block;
+            }
         }
         p {
             padding-bottom: 5.5rem;
@@ -34,6 +40,7 @@
         }
         span {
             @include body;
+            font-weight: 400;
             color: #0d0c22;
             display: block;
         }
@@ -48,7 +55,9 @@
             display: block;
         }
         svg {
-            margin-bottom: 0.5rem;
+            position: absolute;
+            top: 0;
+            right: 0;
         }
     }
 }

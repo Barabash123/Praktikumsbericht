@@ -33,6 +33,7 @@
     img {
         position: relative !important;
         border-radius: 0.25rem;
+        width: 50% !important;
     }
 }
 
@@ -48,9 +49,13 @@
 }
 .gridImage {
     grid-area: grid-1;
+    img {
+        width: 100% !important;
+    }
 }
 .gridBottom {
     grid-area: grid-2;
     display: flex;
     gap: 1.25rem;
+    max-width: 1170px;
 }

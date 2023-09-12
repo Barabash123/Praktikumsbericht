@@ -17,7 +17,7 @@ const Configurator = () => {
                         <p>
                             Ich sollte das Design der Website unter Berücksichtigung der
                             Benutzerfreundlichkeit und der technischen Anforderungen aktualisieren.
-                        </p>
+                    </p>
                     </div>
 
                     <div className={styles.gridImage}>

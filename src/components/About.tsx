@@ -18,8 +18,6 @@ export default function About() {
                 scrub: 1,
             },
         });
-
-        tl.fromTo("#iconDot2", { y: 20 }, { y: 0, stagger: 0.1, duration: 0.5 }, "-=0.5");
     }, []);
 
     return (
@@ -42,12 +40,14 @@ export default function About() {
                 </span>
             </div>
             <div className={styles.gridRight}>
-                <IconLogo id="iconDot2" />
-
                 <h2>
-                    antwerpes entwickelt kreative Kommunikationskonzepte für den Healthcare-Markt
-                    seit 1990 und bietet innovative Lösungen für Campaigning, Medical Education,
-                    Content & Relations, Digital & Agile und Social Media.
+                    antwerpes entwickelt{" "}
+                    <span>
+                        kreative <IconLogo id="iconDot2" />
+                    </span>
+                    Kommunikationskonzepte für den Healthcare-Markt seit 1990 und bietet innovative
+                    Lösungen für Campaigning, Medical Education, Content & Relations, Digital &
+                    Agile und Social Media.
                 </h2>
                 <p>
                     <span>

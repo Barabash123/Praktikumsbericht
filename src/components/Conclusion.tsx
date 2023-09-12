@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./Conclusion.module.scss";
+import { iconDot } from "./Portfolio";
 
 const Conclusion = () => {
     return (
@@ -63,6 +64,7 @@ const Conclusion = () => {
             </div>
 
             <div className={styles.conclusionImage}>
+                {iconDot}
                 <Image
                     src="/images/conclusion.jpg"
                     alt="conclusion image"
