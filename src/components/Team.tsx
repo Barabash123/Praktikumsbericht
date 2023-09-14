@@ -19,12 +19,12 @@ const teamMember = [
         src: "/images/teamMember3.jpg",
     },
     {
-        name: "Lilli Bentrup",
+        name: "Alina Sieburg",
         position: "Junior Designer",
         src: "/images/teamMember4.jpg",
     },
     {
-        name: "Alina Sieburg",
+        name: "Lilli Bentrup",
         position: "Junior Designer",
         src: "/images/teamMember5.jpg",
     },
